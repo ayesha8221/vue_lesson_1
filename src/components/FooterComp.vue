@@ -23,12 +23,12 @@ export default {
     background-color: chocolate;
 }
 
-.footer-text-left {
+/* .footer-text-left {
     font-size: 25px;
     padding-left: 40px;
     float: left;
     word-spacing: 20px;
-}
+} */
 
 .menu:hover {
     background-color: yellowgreen;
