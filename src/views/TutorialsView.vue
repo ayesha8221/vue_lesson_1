@@ -8,17 +8,17 @@
 import CardComp from '@/components/CardComp.vue'
 export default {
 
+
+    components: { CardComp},
+
     computed: {
 
         tutorials() {
             return this.$store.state.tutorials
         }
-    }
+    },
+    mounted() {
+        this.$store.dispatch("getTutorials")
+    },
 }
-mounted() ;
-{
-    this.$store.dispatch("getProperties")
-}
-
-components: {{ CardComp }}
 </script>

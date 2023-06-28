@@ -12,18 +12,18 @@
     </div>
 </template>
 <script>
-import { mounted } from 'vue';
 
 export default {
     props: ["id"],
+
+    mounted() 
+{
+    this.$store.dispatch("getTutorial", this.id)
+},
     computed: {
         tutorial() {
             return this.$store.state.tutorial
         }
-    }
-}
-mounted() ;
-{
-    this.$store.dispatch("getTutorial", this.id)
+    },
 }
 </script>
